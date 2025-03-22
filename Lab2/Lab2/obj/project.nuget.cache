@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "V0HXWDuvBfI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artur\\Documents\\Artur\\TI_LAB_2\\Lab2\\Lab2\\Lab2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artur\\.nuget\\packages\\costura.fody\\6.0.0\\costura.fody.6.0.0.nupkg.sha512",
+    "C:\\Users\\artur\\.nuget\\packages\\fody\\6.8.2\\fody.6.8.2.nupkg.sha512"
+  ],
+  "logs": []
+}
