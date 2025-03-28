@@ -16,3 +16,4 @@ C:\Users\artur\Documents\Artur\TI_LAB_2\Lab2\Lab2\obj\Debug\net8.0-windows\refin
 C:\Users\artur\Documents\Artur\TI_LAB_2\Lab2\Lab2\obj\Debug\net8.0-windows\Lab2.pdb
 C:\Users\artur\Documents\Artur\TI_LAB_2\Lab2\Lab2\obj\Debug\net8.0-windows\Lab2.genruntimeconfig.cache
 C:\Users\artur\Documents\Artur\TI_LAB_2\Lab2\Lab2\obj\Debug\net8.0-windows\ref\Lab2.dll
+C:\Users\artur\Documents\Artur\TI_LAB_2\Lab2\Lab2\obj\Debug\net8.0-windows\Lab2.sourcelink.json

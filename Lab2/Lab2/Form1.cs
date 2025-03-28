@@ -147,7 +147,7 @@ namespace Lab1
 		private void SiphreButton_Click(object sender, EventArgs e)
 		{
 			new_shif = new Shif(RegTextBox.Text, fileBytes);
-			int bitLength = 56;
+			int bitLength = 54;
 
 			string shiftedBits = new_shif.PrintShiftedBits();
 			string inputBits = new_shif.PrintInputBits();
