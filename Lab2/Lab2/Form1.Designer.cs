@@ -39,7 +39,6 @@
 			label2 = new Label();
 			OutputTextBox = new TextBox();
 			label3 = new Label();
-			ActionTextBox = new TextBox();
 			SuspendLayout();
 			// 
 			// RegTextBox
@@ -73,7 +72,7 @@
 			// 
 			// InputTextBox
 			// 
-			InputTextBox.Location = new Point(21, 233);
+			InputTextBox.Location = new Point(21, 264);
 			InputTextBox.Multiline = true;
 			InputTextBox.Name = "InputTextBox";
 			InputTextBox.ReadOnly = true;
@@ -85,7 +84,7 @@
 			// label1
 			// 
 			label1.AutoSize = true;
-			label1.Location = new Point(19, 356);
+			label1.Location = new Point(19, 387);
 			label1.Name = "label1";
 			label1.Size = new Size(63, 15);
 			label1.TabIndex = 10;
@@ -103,7 +102,7 @@
 			// 
 			// SaveButton
 			// 
-			SaveButton.Location = new Point(19, 485);
+			SaveButton.Location = new Point(19, 516);
 			SaveButton.Name = "SaveButton";
 			SaveButton.Size = new Size(189, 32);
 			SaveButton.TabIndex = 19;
@@ -121,7 +120,7 @@
 			CreatedKeyTextBox.Name = "CreatedKeyTextBox";
 			CreatedKeyTextBox.ReadOnly = true;
 			CreatedKeyTextBox.ScrollBars = ScrollBars.Vertical;
-			CreatedKeyTextBox.Size = new Size(554, 57);
+			CreatedKeyTextBox.Size = new Size(554, 86);
 			CreatedKeyTextBox.TabIndex = 20;
 			CreatedKeyTextBox.WordWrap = false;
 			// 
@@ -136,7 +135,7 @@
 			// 
 			// OutputTextBox
 			// 
-			OutputTextBox.Location = new Point(21, 374);
+			OutputTextBox.Location = new Point(21, 405);
 			OutputTextBox.Multiline = true;
 			OutputTextBox.Name = "OutputTextBox";
 			OutputTextBox.ReadOnly = true;
@@ -147,28 +146,17 @@
 			// label3
 			// 
 			label3.AutoSize = true;
-			label3.Location = new Point(19, 215);
+			label3.Location = new Point(19, 246);
 			label3.Name = "label3";
 			label3.Size = new Size(97, 15);
 			label3.TabIndex = 23;
 			label3.Text = "Исходный текст:";
 			// 
-			// ActionTextBox
-			// 
-			ActionTextBox.Location = new Point(581, 56);
-			ActionTextBox.Multiline = true;
-			ActionTextBox.Name = "ActionTextBox";
-			ActionTextBox.ReadOnly = true;
-			ActionTextBox.ScrollBars = ScrollBars.Vertical;
-			ActionTextBox.Size = new Size(363, 423);
-			ActionTextBox.TabIndex = 24;
-			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(959, 520);
-			Controls.Add(ActionTextBox);
+			ClientSize = new Size(583, 554);
 			Controls.Add(label3);
 			Controls.Add(OutputTextBox);
 			Controls.Add(label2);
@@ -198,6 +186,5 @@
 		private Label label2;
 		private TextBox OutputTextBox;
 		private Label label3;
-		private TextBox ActionTextBox;
 	}
 }

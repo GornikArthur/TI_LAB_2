@@ -86,7 +86,6 @@ namespace Lab1
 			CreatedKeyTextBox.Text = "";
 			InputTextBox.Text = "";
 			OutputTextBox.Text = "";
-			ActionTextBox.Text = "";
 		}
 
 		private void LoadButton_Click(object sender, EventArgs e)
@@ -155,7 +154,9 @@ namespace Lab1
 
 			CreatedKeyTextBox.Text = "";
 			CreatedKeyTextBox.Text += $"Первые {Math.Min(shiftedBits.Length, bitLength)} бит вытолкнутых ключа:" + Environment.NewLine;
-			CreatedKeyTextBox.Text += FormatBitsWithSpaces(shiftedBits.Substring(0, Math.Min(shiftedBits.Length, bitLength)));
+			CreatedKeyTextBox.Text += FormatBitsWithSpaces(shiftedBits.Substring(0, Math.Min(shiftedBits.Length, bitLength))) + Environment.NewLine + Environment.NewLine; ;
+			CreatedKeyTextBox.Text += $"Последние {Math.Min(shiftedBits.Length, bitLength)} бит вытолкнутых ключа:" + Environment.NewLine;
+			CreatedKeyTextBox.Text += FormatBitsWithSpaces(shiftedBits.Substring(shiftedBits.Length - Math.Min(bitLength, shiftedBits.Length)));
 
 			InputTextBox.Text = "";
 			InputTextBox.Text += $"Первые {Math.Min(inputBits.Length, bitLength)} бит:" + Environment.NewLine;
@@ -168,27 +169,6 @@ namespace Lab1
 			OutputTextBox.Text += FormatBitsWithSpaces(outputBits.Substring(0, Math.Min(outputBits.Length, bitLength))) + Environment.NewLine + Environment.NewLine;
 			OutputTextBox.Text += $"Последние {Math.Min(outputBits.Length, bitLength)} бит:" + Environment.NewLine;
 			OutputTextBox.Text += FormatBitsWithSpaces(outputBits.Substring(outputBits.Length - Math.Min(bitLength, outputBits.Length)));
-
-			ActionTextBox.Text = "";
-			StringBuilder actionText = new StringBuilder();
-
-			for (int i = 0; i < shiftedBits.Length; i++)
-			{
-				actionText.AppendLine($"Итерация {i + 1}. Вытолкнут бит: {shiftedBits[i]}");
-
-				// Every 300 iterations, push the chunk to the TextBox
-				if (i % 60000 == 0 && i != 0)
-				{
-					ActionTextBox.AppendText(actionText.ToString());
-					actionText.Clear(); // Proper way to reset StringBuilder
-					Application.DoEvents(); // Keeps UI responsive during large loops
-				}
-			}
-
-			// Push remaining content
-			ActionTextBox.AppendText(actionText.ToString());
-
-
 		}
 
 		private void SiphreButton_EnabledChanged(object sender, EventArgs e)

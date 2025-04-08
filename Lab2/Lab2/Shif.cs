@@ -41,14 +41,25 @@ namespace Lab1
 				for (int bit = 0; bit < 8; bit++)
 				{
 					uint newBit = Polynomial(lfsr);
-					keyByte |= (byte)(newBit << bit);
-					shiftedBits.Append(lfsr[0]);
+					shiftedBits.Append(lfsr[0]); 
+
+					keyByte |= (byte)((lfsr[0] - '0') << (7 - bit));
+
+					// Сдвиг LFSR
 					Array.Copy(lfsr, 1, lfsr, 0, lfsr.Length - 1);
-					lfsr[^1] = newBit == 1 ? '1' : '0';
+					lfsr[^1] = (newBit == 1) ? '1' : '0';
 				}
+
 				crypted[i] = (byte)(messageBytes[i] ^ keyByte);
+
+				// 🔹 Отладочный вывод
+				Console.WriteLine($"messageBytes[{i}]: {Convert.ToString(messageBytes[i], 2).PadLeft(8, '0')}");
+				Console.WriteLine($"keyByte: {Convert.ToString(keyByte, 2).PadLeft(8, '0')}");
+				Console.WriteLine($"XOR result: {Convert.ToString(crypted[i], 2).PadLeft(8, '0')}");
 			}
 		}
+
+
 
 		public string PrintInputBits()
 		{
