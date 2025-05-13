@@ -21,12 +21,10 @@ namespace Lab1
 
 		private uint Polynomial(char[] lfsr)
 		{
-			uint bit26 = (uint)(lfsr[0] - '0');
-			uint bit7 = (uint)(lfsr[19] - '0');
-			uint bit6 = (uint)(lfsr[20] - '0');
-			uint bit0 = (uint)(lfsr[26] - '0');
+			uint bit31 = (uint)(lfsr[0] - '0');
+			uint bit3 = (uint)(lfsr[27] - '0');
 
-			return (bit26 ^ bit7 ^ bit6 ^ bit0);
+			return (bit31 ^ bit3);
 		}
 
 		public void Siphre()

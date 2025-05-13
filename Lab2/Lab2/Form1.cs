@@ -39,7 +39,7 @@ namespace Lab1
 			MyTextBox.SelectionStart = newPos;
 			MyTextBox.SelectionLength = 0;
 
-			return MyTextBox.Text.Length == 27;
+			return MyTextBox.Text.Length == 31;
 		}
 
 		private void ResTextBox_TextChanged(object sender, EventArgs e)
@@ -146,7 +146,7 @@ namespace Lab1
 		private void SiphreButton_Click(object sender, EventArgs e)
 		{
 			new_shif = new Shif(RegTextBox.Text, fileBytes);
-			int bitLength = 54;
+			int bitLength = 62;
 
 			string shiftedBits = new_shif.PrintShiftedBits();
 			string inputBits = new_shif.PrintInputBits();

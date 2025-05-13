@@ -57,11 +57,11 @@
 			Columnlabel1.Name = "Columnlabel1";
 			Columnlabel1.Size = new Size(239, 15);
 			Columnlabel1.TabIndex = 2;
-			Columnlabel1.Text = "Состояние регистра: (Всего состояний 27)";
+			Columnlabel1.Text = "Состояние регистра: (Всего состояний 31)";
 			// 
 			// SiphreButton
 			// 
-			SiphreButton.Location = new Point(21, 85);
+			SiphreButton.Location = new Point(225, 85);
 			SiphreButton.Name = "SiphreButton";
 			SiphreButton.Size = new Size(189, 33);
 			SiphreButton.TabIndex = 5;
@@ -92,22 +92,24 @@
 			// 
 			// LoadButton
 			// 
-			LoadButton.Location = new Point(21, 2);
+			LoadButton.BackColor = SystemColors.ActiveCaption;
+			LoadButton.Location = new Point(82, 3);
 			LoadButton.Name = "LoadButton";
 			LoadButton.Size = new Size(189, 33);
 			LoadButton.TabIndex = 18;
-			LoadButton.Text = "Загрузить данные из файла";
-			LoadButton.UseVisualStyleBackColor = true;
+			LoadButton.Text = "Открыть файл";
+			LoadButton.UseVisualStyleBackColor = false;
 			LoadButton.Click += LoadButton_Click;
 			// 
 			// SaveButton
 			// 
-			SaveButton.Location = new Point(19, 516);
+			SaveButton.BackColor = SystemColors.ActiveCaption;
+			SaveButton.Location = new Point(325, 4);
 			SaveButton.Name = "SaveButton";
 			SaveButton.Size = new Size(189, 32);
 			SaveButton.TabIndex = 19;
-			SaveButton.Text = "Сохранить данные в файл";
-			SaveButton.UseVisualStyleBackColor = true;
+			SaveButton.Text = "Сохранить файл";
+			SaveButton.UseVisualStyleBackColor = false;
 			SaveButton.Click += SaveButton_Click;
 			// 
 			// CreatedKeyTextBox
@@ -156,7 +158,7 @@
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(583, 554);
+			ClientSize = new Size(595, 525);
 			Controls.Add(label3);
 			Controls.Add(OutputTextBox);
 			Controls.Add(label2);
